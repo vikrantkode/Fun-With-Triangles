@@ -1,7 +1,38 @@
-:root{
-   
-}
-
 body{
     background-color: grey;
+}
+
+nav {
+    display: block;
+    text-align: right;
+    padding: 1rem;
+    margin: 1rem;
+    
+ }
+
+ nav > a {
+    margin: 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hypotenuse, .area {
+    font-size: x-large;
+}
+
+#output-div {
+    font-size: x-large;
+}
+
+button {
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.4rem;
 }
