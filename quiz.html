@@ -12,55 +12,45 @@
 
 <body>
     <nav>
-        <a href="isTriangle.html">Is Triangle?</a>
+        <a href="index.html">Is Triangle?</a>
         <a href="quiz.html">Triangle Quiz</a>
         <a href="hypotenuse.html">Calculate Hypotenuse</a>
         <a href="area.html">Calculate Area</a>
     </nav>
     <h1>Triangle Quiz</h1>
    
-    <form class="quiz-form">
-        <div class="question-container">
-            <p> Q1 : What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
-            <label>
-                <input type="radio" name="question1" value="45°" />45°
-            </label>
-            <label>
-                <input type="radio" name="question1" value="60°" />60°
-            </label>
-            <label>
-                <input type="radio" name="question1" value="90°" />90°
-            </label>
-        </div>
-        <div class="question-container">
-            <p> Q2 : If one angle of triangle is 90°.What it is called as?</p>
-            <label>
-                <input type="radio" name="question2" value="acute angle triangle" />acute angle triangle
-            </label>
-            <label>
-                <input type="radio" name="question2" value="obtuse angle triangle" />obtuse angle triangle
-            </label>
-            <label>
-                <input type="radio" name="question2" value="right angle triangle" />right angle triangle
-            </label>
-        </div>  
+    <form id="quiz-form">
         <div class="quiz-container">
-            <p> Q3 : All angles of a triangle are equal in:</p>
-            <label> 
-                <input type="radio" value="scalene triangle" name="question3">scalene triangle
-            </label>
-            <label>
-                <input type="radio" value="isosceles triangle" name="question3">isosceles triangle
-            </label>
-            <label>
-                <input type="radio" value="equilateral triangle" name="question3">equilateral triangle
-            </label>
+            <p> Q1 : What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+            <label><input type="radio" value="45°" name="question1">45°</label>
+            <label><input type="radio" value="90°" name="question1">90°</label>
+            <label><input type="radio" value="60°" name="question1">60°</label>
+        </div>
+
+        <div class="quiz-container">
+            <p> Q2: If one angle of triangle is 90°.What it is called as?</p>
+            <label><input type="radio" value="right angle triangle" name="question2">right angle triangle</label>
+            <label><input type="radio" value="acute angle triangle" name="question2">acute angle triangle</label>
+            <label><input type="radio" value="obtuse angle triangle" name="question2">obtuse angle triangle</label>
+        </div>
+
+        <div class="quiz-container">
+            <p> Q3 :All angles of a triangle are equal in:</p>
+            <label> <input type="radio" value="scalene triangle" name="question3">scalene triangle</label>
+            <label><input type="radio" value="isosceles triangle" name="question3">isosceles triangle</label>
+            <label><input type="radio" value="equilateral triangle" name="question3">equilateral triangle</label>
+        </div>
+
+        <div class="quiz-container">
+            <p> Q4: Two sides of a triangle are equal in:</p>
+            <label><input type="radio" value="scalene triangle" name="question4">scalene triangle</label>
+            <label><input type="radio" value="isosceles triangle" name="question4">isosceles triangle</label>
+            <label><input type="radio" value="equilateral triangle" name="question4">equilateral triangle</label>
         </div>
     </form>
-    <button id="submit-answer-btn">Submit Answers</button>
-
-    <div id="output"></div>
-
+    <button type="submit" id="submit-btn">Submit</button>
+    <div id="output-div"></div>
+    </div>
     <script src="quiz.js"></script>
 </body>
 
